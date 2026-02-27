@@ -1,5 +1,6 @@
 # Fine-Tuning Mistral 7B (4-bit QLoRA) for Multi-Turn Intent Classification
----
+
+> 🚀 Parameter-efficient multi-turn intent classification using open-source LLMs with 4-bit QLoRA fine-tuning.
 
 ## 🚀 Project Overview
 

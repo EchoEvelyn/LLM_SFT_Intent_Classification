@@ -8,15 +8,15 @@ The dataset is not included in this repository. This README describes the requir
 
 ## 🚀 Project Overview
 
-Large Language Models (LLMs) are strong zero-shot classifiers, but domain-specific intent classification tasks benefit significantly from supervised fine-tuning.
+Intent classification is a critical component in real-world conversational AI systems such as banking assistants, customer support bots, and workflow automation agents. 
 
-This project:
+While large language models (LLMs) perform well in zero-shot settings, domain-specific multi-turn intent prediction often requires supervised fine-tuning for reliability and consistency.
 
-- Fine-tunes Mistral 7B using QLoRA (4-bit)
-- Uses full dialogue context as model input
-- Trains the model to generate intent labels
-- Reduces GPU memory usage via quantization
-- Trains on ~2,500 full multi-turn conversations
+This project fine-tunes **Mistral 7B** using **QLoRA (4-bit quantization)** to perform multi-class intent classification over full multi-turn conversations (~2,500 examples).
+
+Instead of using a traditional classification head, the model is trained under a causal language modeling objective to generate the correct intent label given the complete dialogue context.
+
+The goal is to build a parameter-efficient, memory-efficient, open-source LLM-based classifier that can be trained on mid-tier GPUs (Colab L4 / A100) without requiring full model fine-tuning.
 
 ---
 

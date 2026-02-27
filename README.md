@@ -1,11 +1,5 @@
 # Fine-Tuning Mistral 7B (4-bit QLoRA) for Multi-Turn Intent Classification
 
-This repository implements a memory-efficient fine-tuning pipeline for adapting **Mistral 7B** using **QLoRA (4-bit NF4 quantization)** for multi-class intent classification on full multi-turn conversations.
-
-The dataset is not included in this repository. This README describes the required data format and training workflow for reproducibility.
-
----
-
 ## 🚀 Project Overview
 
 Intent classification is a critical component in real-world conversational AI systems such as banking assistants, customer support bots, and workflow automation agents. 

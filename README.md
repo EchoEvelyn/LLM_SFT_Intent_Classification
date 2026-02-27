@@ -2,7 +2,7 @@
 
 Lightweight, parameter-efficient multi-turn intent classification using open-source LLMs.
 
-**Tech Stack:** Mistral 7B · Gemma 2B · Qwen 4B · QLoRA · LoRA · 4-bit NF4 · PyTorch · HuggingFace
+**Tech Stack:** Mistral 7B · Qwen 4B · Gemma 2B · QLoRA · LoRA · bitsandbytes · PyTorch · HuggingFace Transformers · PEFT
 
 ## 🚀 Project Overview
 

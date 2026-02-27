@@ -43,9 +43,7 @@ This allows scalable fine-tuning without updating all model weights.
 - Fine-tuning Method: LoRA (QLoRA)
 - Task: Multi-class intent classification
 
----
-
-### 🪜 Architecture Modification
+### Architecture Modification
 
 The original language modeling head of Mistral 7B is replaced with a task-specific classification head.
 

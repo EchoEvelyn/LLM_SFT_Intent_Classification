@@ -1,4 +1,6 @@
 # Fine-Tuning Mistral 7B (4-bit QLoRA) for Multi-Turn Intent Classification
+---
+
 ## 🚀 Project Overview
 
 Intent classification is a critical component in real-world conversational AI systems such as banking assistants, customer support bots, and workflow automation agents. 

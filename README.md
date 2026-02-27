@@ -88,3 +88,16 @@ The training dataset must be structured as JSON or JSONL with the following sche
   "conversation_text": "User: I want to check my loan balance.\nAssistant: Sure, I can help with that.\nUser: ...",
   "intent": "Loan_Balance_Inquiry"
 }
+```
+
+---
+## 📊 Results
+
+We compared the fine-tuned model against a zero-shot prompting baseline using the same underlying base model.
+
+| Method | Macro F1 |
+|--------|----------|
+| Zero-shot Prompting | 49% |
+| Fine-tuned (QLoRA + Classification Head) | 85% |
+
+Fine-tuning improves stability, class separation, and prediction consistency, particularly in multi-turn conversational contexts.

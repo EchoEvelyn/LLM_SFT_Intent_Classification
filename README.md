@@ -46,18 +46,6 @@ This allows scalable fine-tuning without updating all model weights.
 
 ---
 
-## 🏗️ Model Configuration
-
-- Base Model: `mistralai/Mistral-7B`
-- Quantization: 4-bit NF4 (bitsandbytes)
-- Fine-tuning: LoRA adapters
-- Training Objective: Causal LM (supervised)
-- Task: Multi-class intent classification
-
-The model is trained to generate the correct intent label given full dialogue context.
-
----
-
 ## 🔐 HuggingFace Access Requirement
 
 The base model is hosted on HuggingFace.

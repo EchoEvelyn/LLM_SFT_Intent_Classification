@@ -35,14 +35,25 @@ This allows scalable fine-tuning without updating all model weights.
 
 ---
 
-## 🏗 Model Configuration
+## 🧠 Model Architecture & Configuration
 
-- Base Model: `mistralai/Mistral-7B`
-- Model Source: HuggingFace Hub
+- Base Model: `mistralai/Mistral-7B` (HuggingFace Hub)
+- Backbone Type: Decoder-only Transformer
 - Quantization: 4-bit NF4 (bitsandbytes)
 - Fine-tuning Method: LoRA (QLoRA)
-- Training Objective: Causal Language Modeling (supervised)
 - Task: Multi-class intent classification
+
+---
+
+### 🪜 Architecture Modification
+
+The original language modeling head of Mistral 7B is replaced with a task-specific classification head.
+
+The final hidden representation of the input sequence is projected into a fixed set of predefined intent classes and optimized using cross-entropy loss.
+
+Only LoRA adapter weights and the classification head parameters are updated during training, while the backbone transformer weights remain frozen.
+
+This enables parameter-efficient fine-tuning with significantly reduced memory usage.
 
 ---
 

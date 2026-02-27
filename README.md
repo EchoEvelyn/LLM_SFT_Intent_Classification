@@ -101,3 +101,17 @@ We compared the fine-tuned model against a zero-shot prompting baseline using th
 | Fine-tuned (QLoRA + Classification Head) | 85% |
 
 Fine-tuning improves stability, class separation, and prediction consistency, particularly in multi-turn conversational contexts.
+
+---
+
+### Cross-Model Generalization
+
+To evaluate the robustness of the training pipeline, the same fine-tuning configuration (QLoRA + classification head + identical dataset format) was applied to multiple backbone models:
+
+- Mistral 7B
+- Qwen 4B
+- Gemma 2B
+
+The pipeline successfully adapted across model families without structural modification, demonstrating architecture-agnostic fine-tuning capability.
+
+Empirically, larger models exhibited faster convergence during training. However, despite differences in parameter scale, all three models achieved stable convergence within 3 training epochs under the same pipeline configuration.

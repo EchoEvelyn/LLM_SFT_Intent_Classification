@@ -104,7 +104,7 @@ Fine-tuning improves stability, class separation, and prediction consistency, pa
 
 ---
 
-### Cross-Model Generalization
+### 🧩 Cross-Model Generalization
 
 To evaluate the robustness of the training pipeline, the same fine-tuning configuration (QLoRA + classification head + identical dataset format) was applied to multiple backbone models:
 
